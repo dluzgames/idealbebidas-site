@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Demonstração Estratégica — Ideal Bebidas (Atacado & Varejo)</title>
+<style>
+  :root {
+    --bg: #0b1120;
+    --surface: #1e293b;
+    --ink: #f8fafc;
+    --muted: #94a3b8;
+    --acc: #f59e0b;
+    --acc-green: #10b981;
+    --line: #334155;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .stage { width: min(1200px, 96vw); margin: 0 auto; }
+  header { padding: 48px 0 28px; text-align: center; }
+  .kicker {
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--acc);
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: var(--ink);
+  }
+  h1 em { font-style: normal; color: var(--acc); }
+  .sub {
+    color: var(--muted);
+    max-width: 620px;
+    margin: 14px auto 0;
+    font-size: 16px;
+  }
+  .autor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .autor b { color: #fff; }
+  .frame {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px -15px rgba(0,0,0,.6);
+  }
+  .bar {
+    padding: 12px 18px;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .dots { display: flex; gap: 6px; }
+  .dots i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .dots i:nth-child(1) { background: #EF4444; }
+  .dots i:nth-child(2) { background: #F59E0B; }
+  .dots i:nth-child(3) { background: #10B981; }
+  .address-bar {
+    flex: 1;
+    background: #0b1120;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-family: monospace;
+    font-size: 12px;
+  }
+  iframe {
+    width: 100%;
+    height: 780px;
+    border: 0;
+    display: block;
+    background: #0b1120;
+  }
+  .grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 36px 0;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 22px;
+  }
+  .card h3 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card p {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .cta-box {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(11, 17, 32, 0.95));
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    margin: 40px 0 60px;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #f59e0b;
+    color: #0f172a;
+    font-weight: 800;
+    padding: 16px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.35);
+    margin-top: 18px;
+    transition: transform .2s, background .2s;
+  }
+  .cta-btn:hover {
+    background: #d97706;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="kicker">Demonstração Estratégica • Proposta Comercial</div>
+  <h1>Projeto Web Oficial — <em>Ideal Bebidas (Atacado & Varejo)</em></h1>
+  <p class="sub">
+    Desenvolvido sob medida para valorizar a tradição do Centro de Paraíso (Rua 13 de Maio, 816), com calculadora inteligente de Chopp e caixas fechadas para festas e eventos.
+  </p>
+  <div class="autor">
+    <span>Apresentado por <b>Duilio Luz</b></span>
+    <span>•</span>
+    <span><b>DLuz Digital</b> — Empresa de Marketing Digital em Paraíso do Tocantins</span>
+  </div>
+</header>
+
+<div class="stage">
+  <div class="frame">
+    <div class="bar">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div class="address-bar">https://idealbebidas.dluz.com.br — Visualização Interativa do Site</div>
+      <a href="index.html" target="_blank" style="color: var(--acc); text-decoration: none; font-weight: 600;">Abrir em nova aba ↗</a>
+    </div>
+    <iframe src="index.html" title="Prévia do Site Ideal Bebidas"></iframe>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="grid-info">
+    <div class="card">
+      <h3>🍻 1. Calculadora Interativa de Festas</h3>
+      <p>O organizador do churrasco, aniversário ou casamento ajusta a quantidade de convidados e recebe a quantidade ideal de chopp, cervejas, refrigerantes e gelo, já gerando cotação no WhatsApp da loja.</p>
+    </div>
+    <div class="card">
+      <h3>📦 2. Posicionamento Forte no Atacado</h3>
+      <p>Destaque comercial para caixas fechadas e fardos econômicos, atraindo proprietários de bares, lanchonetes e mercearias da região de Paraíso que compram em volume.</p>
+    </div>
+    <div class="card">
+      <h3>📍 3. Ponto Comercial no Centro de Paraíso</h3>
+      <p>Otimização de SEO local na Rua 13 de Maio, garantindo que qualquer morador que procure "distribuidora no centro", "chopp delivery paraíso to" ou "cerveja atacado" encontre a Ideal Bebidas em primeiro lugar.</p>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h2 style="font-size: 24px; color: #fff; margin-bottom: 8px;">Gostou da Demonstração para a Ideal Bebidas?</h2>
+    <p style="color: var(--muted); max-width: 550px; margin: 0 auto; font-size: 15px;">
+      Podemos colocar este portal no ar com domínio oficial de vocês imediatamente, além de impulsionar as vendas com tráfego pago no Google e Meta para toda Paraíso e região. Suporte local e próximo com quem é daqui!
+    </p>
+    <a href="https://api.whatsapp.com/send?phone=556399432564&text=Opa%20Duilio%2C%20vi%20a%20demonstra%C3%A7%C3%A3o%20do%20site%20da%20Ideal%20Bebidas%21%20Vamos%20conversar." class="cta-btn">
+      Falar com Duilio Luz no WhatsApp (DLuz Digital) 💬
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
