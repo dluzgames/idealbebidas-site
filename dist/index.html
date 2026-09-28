@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ideal Bebidas | Distribuidora no Centro de Paraíso do Tocantins</title>
-  <meta name="description" content="Distribuidora de Bebidas no Centro de Paraíso do Tocantins. Preço de atacado e varejo em caixas fechadas, chopp para eventos e festas, refrigerantes e destilados. Rua 13 de Maio, 816.">
+  <title>Ideal Bebidas | Distribuidora Tradicional • Centro de Paraíso do Tocantins</title>
+  <meta name="description" content="Distribuidora de bebidas tradicional no Centro de Paraíso do Tocantins. Preço de atacado em caixas fechadas, chopp em barril com chopeira instalada para eventos e comércio. Rua 13 de Maio, 816.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Ideal Bebidas — Atacado, Varejo & Chopp para Eventos em Paraíso">
-  <meta property="og:description" content="Bebida gelada, preço de atacado e muita variedade no Centro de Paraíso do Tocantins. Faça sua cotação no WhatsApp!">
+  <meta property="og:title" content="Ideal Bebidas — Atacado, Varejo & Chopp para Eventos no Centro">
+  <meta property="og:description" content="A distribuidora das grandes festas e do comércio local em Paraíso do Tocantins. Rua 13 de Maio, 816. Cotações no WhatsApp!">
   <meta property="og:image" content="assets/logo.jpg">
   <meta property="og:type" content="website">
 
@@ -16,523 +16,561 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            brand: {
-              amber: '#f59e0b',
-              gold: '#fbbf24',
-              dark: '#0f172a',
-              card: '#1e293b',
-              border: '#334155'
-            }
+            paper: '#FAF7F2',
+            ink: '#1C1A17',
+            terracotta: '#C0512F',
+            forest: '#2F5B4F',
+            linen: '#EBE5DC',
+            amberbrew: '#D97706',
+            muted: '#8A817A'
           },
           fontFamily: {
-            sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif']
+            serif: ['Fraunces', 'Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
           }
         }
       }
     }
   </script>
 
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
-    
     body {
-      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-      background-color: #0b1120;
-      color: #f8fafc;
+      background-color: #FAF7F2;
+      color: #1C1A17;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       overflow-x: hidden;
     }
 
-    .glow-amber {
-      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(11, 17, 32, 0) 70%);
+    .font-fraunces {
+      font-family: 'Fraunces', serif;
     }
 
-    .glow-blue {
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(11, 17, 32, 0) 70%);
+    /* Editorial Hairlines */
+    .border-editorial {
+      border-color: rgba(47, 91, 79, 0.15);
     }
 
-    .card-ideal {
-      background: rgba(30, 41, 59, 0.7);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    .border-terracotta {
+      border-color: rgba(192, 81, 47, 0.25);
     }
 
-    .card-ideal:hover {
-      border-color: rgba(245, 158, 11, 0.4);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.2);
-    }
-
-    .text-gradient-amber {
-      background: linear-gradient(135deg, #ffffff 0%, #fde68a 50%, #f59e0b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .badge-pulse {
-      box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
-      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(245, 158, 11, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    /* Paper texture tint */
+    .bg-paper-card {
+      background-color: #FFFFFF;
+      border: 1px solid rgba(47, 91, 79, 0.12);
     }
   </style>
 </head>
-<body class="selection:bg-amber-500/30 selection:text-amber-200">
+<body class="selection:bg-[#C0512F] selection:text-white">
 
-  <!-- Ambient Glow -->
-  <div class="fixed top-0 left-1/3 w-[650px] h-[550px] glow-amber pointer-events-none -z-10"></div>
-  <div class="fixed top-1/2 right-0 w-[500px] h-[500px] glow-blue pointer-events-none -z-10"></div>
+  <!-- EDITORIAL TOP MASTHEAD (Traditional Gazette Header) -->
+  <div class="border-b border-editorial py-2.5 px-4 text-center text-xs tracking-widest uppercase font-semibold text-muted bg-[#F2EDE4]">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span>DISTRIBUIDORA DE BEBIDAS OFICIAL • DESDE O CENTRO DE PARAÍSO DO TOCANTINS</span>
+      <span class="hidden sm:inline">•</span>
+      <span>RUA 13 DE MAIO, Nº 816 • ATENDIMENTO DE SEGUNDA A DOMINGO</span>
+    </div>
+  </div>
 
-  <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-[#0b1120]/85 backdrop-blur-xl border-b border-white/5">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo.jpg" alt="Ideal Bebidas Logo" class="w-10 h-10 rounded-full border border-amber-500/40 object-cover shadow-lg">
+  <!-- MAIN EDITORIAL HEADER -->
+  <header class="border-b border-editorial bg-[#FAF7F2]/95 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-24 flex items-center justify-between">
+      
+      <!-- Brand & Traditional Coat -->
+      <div class="flex items-center gap-4">
+        <img src="assets/logo.jpg" alt="Ideal Bebidas Logo" class="w-14 h-14 rounded-full object-cover border border-editorial shadow-sm">
         <div>
-          <span class="font-bold text-lg tracking-wider text-white flex items-center gap-1.5">
-            IDEAL BEBIDAS <span class="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded border border-amber-500/30">ATACADO & VAREJO</span>
+          <span class="font-fraunces font-bold text-2xl sm:text-3xl tracking-tight text-ink block leading-none">
+            Ideal Bebidas
           </span>
-          <span class="text-[11px] text-slate-400 block -mt-1">Rua 13 de Maio, 816 • Centro • Paraíso do Tocantins</span>
+          <span class="text-xs uppercase tracking-widest text-forest font-bold mt-1 block">
+            Atacado • Varejo • Chopp para Eventos
+          </span>
         </div>
       </div>
 
       <!-- Navigation -->
-      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-        <a href="#calculadora" class="hover:text-amber-400 transition-colors">Calculadora de Eventos</a>
-        <a href="#atacado" class="hover:text-amber-400 transition-colors">Atacado & Chopp</a>
-        <a href="#feed" class="hover:text-amber-400 transition-colors">Instagram</a>
-        <a href="#localizacao" class="hover:text-amber-400 transition-colors">Localização & Contato</a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-ink">
+        <a href="#proposito" class="hover:text-terracotta transition-colors">Tradição</a>
+        <a href="#chopp" class="hover:text-terracotta transition-colors">Chopp & Eventos</a>
+        <a href="#calculadora" class="hover:text-terracotta transition-colors">Calculadora</a>
+        <a href="#catalogo" class="hover:text-terracotta transition-colors">Caixas Fechadas</a>
+        <a href="#contato" class="hover:text-terracotta transition-colors">Localização</a>
       </nav>
 
-      <!-- CTA Button -->
-      <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Ideal%20Bebidas%20e%20gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o%21" target="_blank" class="flex items-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-slate-950 font-bold text-xs md:text-sm px-4 py-2 rounded-lg shadow-lg shadow-amber-500/20 transition-all">
+      <!-- Action Button -->
+      <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Ideal%20Bebidas%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%21" target="_blank" class="flex items-center gap-2 bg-terracotta hover:bg-[#a64224] text-white text-xs sm:text-sm font-bold px-5 py-3 rounded-lg transition-colors shadow-sm">
         <i data-lucide="message-circle" class="w-4 h-4"></i>
-        <span>WhatsApp (63) 97400-6380</span>
+        <span>Cotações: (63) 97400-6380</span>
       </a>
+
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="pt-32 pb-20 px-4 max-w-6xl mx-auto">
-    <div class="flex flex-col items-center text-center">
+  <!-- EDITORIAL COVER HERO (Magazine Style Split) -->
+  <section class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto border-b border-editorial">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <!-- Location Badge -->
-      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300 mb-8 shadow-sm">
-        <span class="w-2 h-2 rounded-full bg-amber-400 badge-pulse"></span>
-        <span class="font-medium text-amber-400">Distribuidora no Centro de Paraíso</span>
-        <span class="text-slate-600">•</span>
-        <span class="text-slate-400">Atacado, Varejo & Chopp para Eventos</span>
-      </div>
-
-      <!-- Headline -->
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl text-gradient-amber leading-tight mb-6">
-        Bebida Gelada & Preço de Atacado no Centro de Paraíso.
-      </h1>
-
-      <!-- Subtitle -->
-      <p class="text-slate-400 text-base md:text-lg max-w-2xl leading-relaxed mb-10">
-        Da caixa fechada para o seu comércio ou resenha até o barril de Chopp com chopeira instalada para grandes festas. Qualidade, preço justo e estoque completo na Rua 13 de Maio.
-      </p>
-
-      <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-        <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20de%20bebidas%20na%20Ideal%20Bebidas%21" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-3.5 rounded-xl shadow-xl shadow-amber-500/25 transition-all text-base group">
-          <i data-lucide="zap" class="w-5 h-5 text-slate-950 group-hover:scale-110 transition-transform"></i>
-          <span>Solicitar Cotação no WhatsApp</span>
-        </a>
-        <a href="#calculadora" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-medium px-8 py-3.5 rounded-xl transition-all text-base">
-          <i data-lucide="calculator" class="w-5 h-5 text-amber-400"></i>
-          <span>Calcular Bebidas para Evento</span>
-        </a>
-      </div>
-
-      <!-- Quick Metrics Strip -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 w-full max-w-4xl">
-        <div class="card-ideal p-5 rounded-2xl text-center">
-          <div class="text-2xl md:text-3xl font-bold text-amber-400 mb-1">Centro</div>
-          <div class="text-xs text-slate-400 uppercase tracking-wider font-medium">Rua 13 de Maio, 816</div>
+      <!-- Headline & Editorial Column -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-terracotta bg-[#F2EDE4] px-3.5 py-1.5 rounded border border-editorial">
+          <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+          <span>Edição Oficial • Paraíso do Tocantins</span>
         </div>
-        <div class="card-ideal p-5 rounded-2xl text-center">
-          <div class="text-2xl md:text-3xl font-bold text-yellow-400 mb-1">Chopp Delivery</div>
-          <div class="text-xs text-slate-400 uppercase tracking-wider font-medium">Barris 30L & 50L c/ Chopeira</div>
-        </div>
-        <div class="card-ideal p-5 rounded-2xl text-center">
-          <div class="text-2xl md:text-3xl font-bold text-sky-400 mb-1">Caixa Fechada</div>
-          <div class="text-xs text-slate-400 uppercase tracking-wider font-medium">Preço de Atacado Real</div>
-        </div>
-        <div class="card-ideal p-5 rounded-2xl text-center">
-          <div class="text-2xl md:text-3xl font-bold text-emerald-400 mb-1">7 Dias</div>
-          <div class="text-xs text-slate-400 uppercase tracking-wider font-medium">Aberto Todos os Dias</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Interactive Event Drink Calculator -->
-  <section id="calculadora" class="py-16 px-4 bg-slate-950/70 border-y border-white/5 relative">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-10">
-        <span class="text-xs font-semibold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Ferramenta Interativa</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-3">Calculadora de Bebidas para Festas & Eventos 🍻🎉</h2>
-        <p class="text-slate-400 text-sm md:text-base mt-2">Ajuste o número de convidados e receba a estimativa exata de consumo com cotação imediata.</p>
-      </div>
+        <h1 class="font-fraunces text-4xl sm:text-5xl lg:text-6xl text-ink font-bold leading-[1.08] tracking-tight">
+          Bebida gelada, preço de atacado e a tradição dos <em class="italic font-normal text-terracotta">grandes eventos</em> em Paraíso.
+        </h1>
 
-      <div class="card-ideal p-6 md:p-8 rounded-3xl border border-amber-500/20 shadow-2xl">
-        <div class="space-y-6">
-          
-          <!-- Slider: Convidados -->
+        <p class="text-base sm:text-lg text-[#4A453E] leading-relaxed max-w-xl">
+          Do barril de Chopp com chopeira instalada na sua festa particular até caixas fechadas com preços de distribuição para lanchonetes, restaurantes e revendedores.
+        </p>
+
+        <!-- CTA & Info Pill -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+          <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20evento%20na%20Ideal%20Bebidas" target="_blank" class="flex items-center justify-center gap-2.5 bg-forest hover:bg-[#23453b] text-white font-bold px-7 py-4 rounded-lg text-sm transition-all shadow-sm">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span>Solicitar Orçamento de Chopp</span>
+          </a>
+          <a href="#calculadora" class="flex items-center justify-center gap-2 bg-white hover:bg-[#F2EDE4] border border-editorial text-ink font-bold px-6 py-4 rounded-lg text-sm transition-all">
+            <i data-lucide="calculator" class="w-4 h-4 text-terracotta"></i>
+            <span>Simulador de Festa</span>
+          </a>
+        </div>
+
+        <!-- Editorial Credentials Strip -->
+        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-editorial text-left">
           <div>
-            <div class="flex items-center justify-between mb-2">
-              <label class="text-sm font-bold text-slate-300 flex items-center gap-2">
-                <i data-lucide="users" class="w-4 h-4 text-amber-400"></i>
-                Quantidade de Convidados:
-              </label>
-              <span id="guests-val" class="text-xl font-extrabold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-lg border border-amber-500/30">
-                50 pessoas
-              </span>
-            </div>
-            <input type="range" id="guests-slider" min="10" max="300" step="5" value="50" class="w-full h-2.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-amber-500">
-            <div class="flex justify-between text-[11px] text-slate-500 mt-1">
-              <span>10 convidados</span>
-              <span>150 convidados</span>
-              <span>300 convidados</span>
+            <span class="font-fraunces font-bold text-2xl sm:text-3xl text-ink block">30L e 50L</span>
+            <span class="text-xs text-muted font-medium">Barris com Chopeira</span>
+          </div>
+          <div>
+            <span class="font-fraunces font-bold text-2xl sm:text-3xl text-terracotta block">Rua 13 de Maio</span>
+            <span class="text-xs text-muted font-medium">Ponto Central nº 816</span>
+          </div>
+          <div>
+            <span class="font-fraunces font-bold text-2xl sm:text-3xl text-forest block">7 Dias</span>
+            <span class="text-xs text-muted font-medium">Aberto Todo Fim de Semana</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Real Instagram Photography (Cover Article Style) -->
+      <div class="lg:col-span-5">
+        <div class="bg-white p-4 rounded-2xl border border-editorial shadow-lg">
+          
+          <div class="relative overflow-hidden rounded-xl aspect-[4/5] bg-linen">
+            <img src="assets/post_2_DYzb-4duc7t.jpg" alt="Ideal Bebidas Eventos e Parcerias" class="w-full h-full object-cover">
+            
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 text-white">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-300 block">Registro Real • Instagram @idealbebidas_pso</span>
+              <p class="font-fraunces italic text-lg leading-tight mt-1">
+                "Grandes parcerias formam grandes festas."
+              </p>
             </div>
           </div>
 
-          <!-- Select: Tipo de Evento & Formato da Bebida -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Tipo de Evento:</label>
-              <select id="event-type" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-amber-500">
-                <option value="churrasco">Churrasco / Resenha com os Amigos</option>
-                <option value="aniversario">Aniversário / Festa Noturna</option>
-                <option value="casamento">Casamento / Confraternização de Empresa</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Preferência de Cerveja:</label>
-              <select id="beer-format" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-sm focus:outline-none focus:border-amber-500">
-                <option value="chopp">Chopp em Barril (c/ Chopeira instalada)</option>
-                <option value="latas">Cerveja em Latas / Caixas Fechadas</option>
-                <option value="misto">Misto (Barril de Chopp + Caixas de Latão)</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Dynamic Output Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-center">
-            <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800">
-              <span class="text-xs text-slate-400 uppercase font-semibold">Cerveja / Chopp:</span>
-              <div id="calc-beer" class="text-lg font-bold text-amber-400 mt-1">75 Litros de Chopp</div>
-            </div>
-            <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800">
-              <span class="text-xs text-slate-400 uppercase font-semibold">Não Alcoólicos:</span>
-              <div id="calc-soda" class="text-lg font-bold text-sky-400 mt-1">10 Garrafas de 2L + Águas</div>
-            </div>
-            <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800">
-              <span class="text-xs text-slate-400 uppercase font-semibold">Gelo Recomendado:</span>
-              <div id="calc-ice" class="text-lg font-bold text-emerald-400 mt-1">5 Sacos de Gelo 5kg</div>
-            </div>
-          </div>
-
-          <!-- Button -->
-          <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <span class="text-xs text-slate-400 text-left">
-              *Estimativa baseada em consumo médio de 4 a 5 horas de festa.
-            </span>
-            <button onclick="enviarCalculadoraWhatsApp()" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-7 py-3 rounded-xl shadow-lg shadow-amber-500/25 transition-all text-sm">
-              <i data-lucide="send" class="w-4 h-4"></i>
-              <span>Cotar Esta Lista no WhatsApp</span>
-            </button>
+          <div class="pt-3 px-1 flex items-center justify-between text-xs text-muted">
+            <span>Fornecimento para Confraternizações</span>
+            <span class="font-bold text-forest">Paraíso do Tocantins</span>
           </div>
 
         </div>
       </div>
+
     </div>
+
   </section>
 
-  <!-- Atacado & Chopp para Eventos -->
-  <section id="atacado" class="py-20 px-4 max-w-6xl mx-auto">
-    <div class="text-center max-w-2xl mx-auto mb-14">
-      <span class="text-xs font-semibold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Soluções Completas</span>
-      <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-3">Tudo para Sua Festa ou Estabelecimento</h2>
-      <p class="text-slate-400 text-sm md:text-base mt-3">Atendemos bares, restaurantes, lanchonetes e eventos particulares em toda a região de Paraíso.</p>
+  <!-- CALCULADORA EDITORIAL DE BEBIDAS PARA EVENTOS (Interactive Feature) -->
+  <section id="calculadora" class="py-16 sm:py-20 px-4 sm:px-6 max-w-5xl mx-auto">
+    
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-bold uppercase tracking-widest text-forest">Planejamento Sem Desperdício</span>
+      <h2 class="font-fraunces font-bold text-3xl sm:text-4xl text-ink mt-1">
+        Calculadora de Bebidas para Sua Festa
+      </h2>
+      <p class="text-muted text-sm sm:text-base mt-2">
+        Evite a falta de bebida ou compras excessivas. Selecione o número de convidados e receba a estimativa recomendada com cotação imediata.
+      </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white rounded-2xl border border-editorial p-6 sm:p-10 shadow-sm space-y-8">
       
-      <!-- Card 1: Chopp -->
-      <div class="card-ideal p-7 rounded-3xl flex flex-col justify-between border-amber-500/30">
-        <div>
-          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-5">
-            <i data-lucide="beer" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-2">Chopp Delivery com Chopeira</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Barris de 30L e 50L das melhores marcas de Chopp puro malte. Entregamos e instalamos a chopeira elétrica profissional no local do seu evento.
-          </p>
-          <ul class="text-xs text-slate-300 space-y-1.5">
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Chopeira elétrica inclusa e regulada</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Barris 30L e 50L a pronta entrega</li>
-          </ul>
+      <!-- Slider Control -->
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <label class="font-fraunces font-bold text-lg sm:text-xl text-ink">
+            Quantas pessoas estarão presentes no seu evento?
+          </label>
+          <span id="editorial-guests-num" class="font-fraunces font-bold text-2xl text-terracotta bg-[#FAF7F2] px-4 py-1 rounded-lg border border-editorial">
+            60 pessoas
+          </span>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Gostaria%20de%20or%C3%A7ar%20um%20barril%20de%20chopp%20para%20evento" target="_blank" class="mt-6 inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 gap-1">
-          Cotar Chopp para Evento <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
+        <input type="range" id="editorial-slider" min="15" max="300" step="5" value="60" class="w-full h-3 bg-linen rounded-lg appearance-none cursor-pointer accent-terracotta">
+        
+        <div class="flex justify-between text-xs text-muted mt-2 font-medium">
+          <span>15 convidados</span>
+          <span>150 convidados</span>
+          <span>300 convidados</span>
+        </div>
+      </div>
+
+      <!-- Select Controls -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-editorial">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-muted mb-2">Formato do Evento:</label>
+          <select id="editorial-event-type" class="w-full bg-[#FAF7F2] border border-editorial rounded-lg p-3.5 text-sm font-semibold text-ink focus:outline-none focus:border-terracotta">
+            <option value="churrasco">Churrasco de Tarde (5 horas de consumo)</option>
+            <option value="aniversario">Aniversário / Festa Noturna</option>
+            <option value="casamento">Casamento / Confraternização Corporativa</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-muted mb-2">Tipo Principal de Cerveja:</label>
+          <select id="editorial-beer-pref" class="w-full bg-[#FAF7F2] border border-editorial rounded-lg p-3.5 text-sm font-semibold text-ink focus:outline-none focus:border-terracotta">
+            <option value="chopp">Barril de Chopp (Instalação de Chopeira)</option>
+            <option value="latas">Cerveja em Caixas Fechadas (Latão / 350ml)</option>
+            <option value="misto">Misto (Chopp na Chopeira + Caixas de Apoio)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Estimated Breakdown Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-editorial text-center">
+        
+        <div class="p-5 rounded-xl bg-[#FAF7F2] border border-editorial">
+          <span class="text-xs uppercase tracking-wider font-bold text-muted block mb-1">Chopp / Cerveja:</span>
+          <div id="out-beer" class="font-fraunces font-bold text-2xl text-terracotta">
+            2x Barril 50L (100L)
+          </div>
+          <span class="text-[11px] text-muted block mt-1">Servido na Chopeira Ideal</span>
+        </div>
+
+        <div class="p-5 rounded-xl bg-[#FAF7F2] border border-editorial">
+          <span class="text-xs uppercase tracking-wider font-bold text-muted block mb-1">Refrigerantes & Águas:</span>
+          <div id="out-soda" class="font-fraunces font-bold text-2xl text-forest">
+            12 Garrafas 2L + 24 Águas
+          </div>
+          <span class="text-[11px] text-muted block mt-1">Fardos Fechados</span>
+        </div>
+
+        <div class="p-5 rounded-xl bg-[#FAF7F2] border border-editorial">
+          <span class="text-xs uppercase tracking-wider font-bold text-muted block mb-1">Gelo Filtrado:</span>
+          <div id="out-ice" class="font-fraunces font-bold text-2xl text-ink">
+            6 Sacos de 5kg
+          </div>
+          <span class="text-[11px] text-muted block mt-1">Gelo em Cubos</span>
+        </div>
+
+      </div>
+
+      <!-- Dispatch to WhatsApp -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-muted">
+          *A estimativa inclui entrega no local em Paraíso do Tocantins e montagem da chopeira.
+        </p>
+
+        <button onclick="enviarCalculadoraEditorialWhatsApp()" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-terracotta hover:bg-[#a64224] text-white font-bold px-8 py-3.5 rounded-lg text-sm shadow-sm transition-all">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Enviar Lista para Orçamento no WhatsApp</span>
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- COMPARAÇÃO EDITORIAL: VAREJO VS ATACADO FECHADO -->
+  <section id="catalogo" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-editorial">
+    
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-forest">Estrutura de Atendimento</span>
+      <h2 class="font-fraunces font-bold text-3xl sm:text-4xl text-ink mt-1">
+        Duas Modalidades de Compra
+      </h2>
+      <p class="text-muted text-sm sm:text-base mt-2">
+        Seja para a resenha do final de semana ou para abastecer o seu ponto comercial.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Box 1: Atacado & Comércio -->
+      <div class="bg-white p-8 rounded-2xl border border-editorial shadow-sm space-y-6">
+        <div class="flex items-center justify-between border-b border-editorial pb-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Modalidade Atacado</span>
+            <h3 class="font-fraunces font-bold text-2xl text-ink mt-0.5">Caixas Fechadas & Comércio</h3>
+          </div>
+          <i data-lucide="package" class="w-8 h-8 text-forest"></i>
+        </div>
+
+        <p class="text-sm text-[#4A453E] leading-relaxed">
+          Preços diferenciados para pedidos em caixas fechadas de cervejas (350ml, Latão 473ml, 600ml e litrão), fardos de refrigerantes e águas.
+        </p>
+
+        <ul class="text-xs space-y-2.5 text-ink font-medium">
+          <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-forest"></i> Condições para bares, lanchonetes e mercearias</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-forest"></i> Marcas líderes: Heineken, Spaten, Corona, Amstel e Skol</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-forest"></i> Retirada rápida no centro ou entrega programada</li>
+        </ul>
+
+        <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Gostaria%20de%20consultar%20a%20tabela%20de%20atacado%20em%20caixas%20fechadas" target="_blank" class="block text-center bg-[#FAF7F2] hover:bg-forest hover:text-white border border-editorial text-forest font-bold py-3 px-4 rounded-lg text-xs transition-colors uppercase tracking-wider">
+          Solicitar Tabela de Atacado
         </a>
       </div>
 
-      <!-- Card 2: Caixas Fechadas no Atacado -->
-      <div class="card-ideal p-7 rounded-3xl flex flex-col justify-between">
-        <div>
-          <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-5">
-            <i data-lucide="package" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-2">Cervejas em Caixas Fechadas</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Preço de atacado em fardos e caixas fechadas das marcas líderes: Heineken, Spaten, Amstel, Corona, Skol, Brahma e muito mais.
-          </p>
-          <ul class="text-xs text-slate-300 space-y-1.5">
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> Latão 473ml, Lata 350ml e Long Neck</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i> Condições especiais para comerciantes</li>
-          </ul>
-        </div>
-        <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Gostaria%20da%20tabela%20de%20caixas%20fechadas%20no%20atacado" target="_blank" class="mt-6 inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 gap-1">
-          Ver Tabela de Atacado <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-        </a>
-      </div>
+      <!-- Box 2: Chopp Delivery para Eventos -->
+      <div class="bg-white p-8 rounded-2xl border-2 border-terracotta shadow-sm space-y-6 relative">
+        <span class="absolute top-4 right-4 bg-terracotta text-white text-[10px] font-extrabold uppercase tracking-widest px-2.5 py-1 rounded">
+          Mais Pedido para Festas
+        </span>
 
-      <!-- Card 3: Refrigerantes & Destilados -->
-      <div class="card-ideal p-7 rounded-3xl flex flex-col justify-between">
-        <div>
-          <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-5">
-            <i data-lucide="wine" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-2">Refrigerantes, Águas & Destilados</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Fardos de refrigerantes 2L e lata, águas minerais com e sem gás, energéticos e linha completa de destilados (whisky, gin, vodka e cachaças).
-          </p>
-          <ul class="text-xs text-slate-300 space-y-1.5">
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Fardos econômicos para revenda</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Gelo filtrado e carvão sempre prontos</li>
-          </ul>
+        <div class="border-b border-editorial pb-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-forest">Chopp Oficial</span>
+          <h3 class="font-fraunces font-bold text-2xl text-ink mt-0.5">Chopp Delivery com Chopeira</h3>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Quero%20fazer%20pedido%20de%20refrigerantes%20e%20destilados" target="_blank" class="mt-6 inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 gap-1">
-          Consultar Bebidas <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
+        <p class="text-sm text-[#4A453E] leading-relaxed">
+          A estrutura completa para aniversários, casamentos, formaturas e churrascos. O chopp chega gelado com chopeira elétrica profissional instalada no local.
+        </p>
+
+        <ul class="text-xs space-y-2.5 text-ink font-medium">
+          <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta"></i> Chopeira elétrica regulada e pronta para servir</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta"></i> Barris de 30L e 50L de puro malte</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-terracotta"></i> Recolhimento do equipamento após o evento</li>
+        </ul>
+
+        <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Gostaria%20de%20reservar%20um%20barril%20de%20chopp%20com%20chopeira" target="_blank" class="block text-center bg-terracotta hover:bg-[#a64224] text-white font-bold py-3 px-4 rounded-lg text-xs transition-colors uppercase tracking-wider">
+          Reservar Chopp para Evento
         </a>
       </div>
 
     </div>
+
   </section>
 
-  <!-- Feed Real do Instagram @idealbebidas_pso -->
-  <section id="feed" class="py-16 px-4 bg-slate-950 border-t border-white/5">
+  <!-- MURAL DE FOTOS REAIS DO INSTAGRAM @idealbebidas_pso -->
+  <section id="feed" class="py-16 sm:py-20 px-4 sm:px-6 bg-[#F2EDE4] border-t border-editorial">
     <div class="max-w-6xl mx-auto">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10">
+      
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-10">
         <div>
-          <span class="text-xs font-semibold uppercase tracking-widest text-amber-400">Instagram Oficial</span>
-          <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-1">Conecte-se com a @idealbebidas_pso</h2>
-          <p class="text-slate-400 text-sm">Acompanhe as parcerias de grandes festas e as promoções da semana.</p>
+          <span class="text-xs font-bold uppercase tracking-widest text-forest">Galeria de Registros</span>
+          <h2 class="font-fraunces font-bold text-2xl sm:text-3xl text-ink mt-0.5">
+            Presença em Paraíso • @idealbebidas_pso
+          </h2>
+          <p class="text-xs sm:text-sm text-muted">Acompanhe as novidades e eventos atendidos pela Ideal Bebidas.</p>
         </div>
-        <a href="https://www.instagram.com/idealbebidas_pso/" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 text-xs font-semibold px-4 py-2.5 rounded-xl border border-slate-700 transition-colors">
-          <i data-lucide="instagram" class="w-4 h-4 text-amber-400"></i>
-          <span>Seguir @idealbebidas_pso</span>
+
+        <a href="https://www.instagram.com/idealbebidas_pso/" target="_blank" class="flex items-center gap-2 bg-white hover:bg-linen border border-editorial text-ink text-xs font-bold px-4 py-2.5 rounded-lg transition-colors">
+          <i data-lucide="instagram" class="w-4 h-4 text-terracotta"></i>
+          <span>Seguir no Instagram</span>
         </a>
       </div>
 
-      <!-- Real Instagram Grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
-        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-slate-900">
-          <img src="assets/post_2_DYzb-4duc7t.jpg" alt="Post Ideal Bebidas Parceria" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
-            Grandes Parcerias & Festas 🎉
+      <!-- Real Instagram Photos Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        
+        <div class="bg-white p-2.5 rounded-xl border border-editorial shadow-sm">
+          <div class="aspect-square rounded-lg overflow-hidden bg-linen">
+            <img src="assets/post_3_DVyyt6XkcjB.jpg" alt="Ideal Bebidas Estoque" class="w-full h-full object-cover">
           </div>
+          <span class="text-[11px] font-bold text-ink block mt-2 px-1">Bebida Gelada & Preço Bom 🍻</span>
         </div>
 
-        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-slate-900">
-          <img src="assets/post_3_DVyyt6XkcjB.jpg" alt="Post Ideal Bebidas Paraiso" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
-            Bebida Gelada & Preço Bom 🍻
+        <div class="bg-white p-2.5 rounded-xl border border-editorial shadow-sm">
+          <div class="aspect-square rounded-lg overflow-hidden bg-linen">
+            <img src="assets/post_4_DVb2B4FEg9L.jpg" alt="Ideal Bebidas Ofertas" class="w-full h-full object-cover">
           </div>
+          <span class="text-[11px] font-bold text-ink block mt-2 px-1">Vem pra Ideal Bebidas 🔥</span>
         </div>
 
-        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-slate-900">
-          <img src="assets/post_4_DVb2B4FEg9L.jpg" alt="Post Ideal Bebidas Promocoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
-            Vem pra Ideal Bebidas 🔥
+        <div class="bg-white p-2.5 rounded-xl border border-editorial shadow-sm">
+          <div class="aspect-square rounded-lg overflow-hidden bg-linen">
+            <img src="assets/post_7_C5oEhAlOp_1.jpg" alt="Ideal Bebidas Centro" class="w-full h-full object-cover">
           </div>
+          <span class="text-[11px] font-bold text-ink block mt-2 px-1">Balcão Rua 13 de Maio 📍</span>
         </div>
 
-        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-slate-900">
-          <img src="assets/post_5_DP9PeGGDsAX.jpg" alt="Post Ideal Bebidas Eventos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
-            Estoque de Chopp & Bebidas
+        <div class="bg-white p-2.5 rounded-xl border border-editorial shadow-sm">
+          <div class="aspect-square rounded-lg overflow-hidden bg-linen">
+            <img src="assets/post_8_C3sfDHeuCcG.jpg" alt="Ideal Bebidas Caixas" class="w-full h-full object-cover">
           </div>
+          <span class="text-[11px] font-bold text-ink block mt-2 px-1">Atacado em Caixas Fechadas 📦</span>
         </div>
 
-        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-slate-900">
-          <img src="assets/post_7_C5oEhAlOp_1.jpg" alt="Post Ideal Bebidas Centro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
-            Atendimento Central
-          </div>
-        </div>
-
-        <div class="group relative rounded-2xl overflow-hidden aspect-square border border-white/5 bg-slate-900">
-          <img src="assets/post_8_C3sfDHeuCcG.jpg" alt="Post Ideal Bebidas Cervejas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-2 text-center text-[10px] text-white">
-            Variedade no Atacado
-          </div>
-        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Localização, Endereço & Horários -->
-  <section id="localizacao" class="py-20 px-4 max-w-6xl mx-auto">
-    <div class="card-ideal p-8 md:p-12 rounded-3xl border border-white/10 relative overflow-hidden">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-widest text-amber-400">Atendimento Presencial no Centro</span>
-          <h2 class="text-3xl font-extrabold text-white mt-2 mb-4">Visite Nosso Balcão de Atacado</h2>
-          <p class="text-slate-400 text-sm leading-relaxed mb-6">
-            Ponto comercial tradicional e bem localizado no Centro de Paraíso do Tocantins. Facilidade para carregar seu veículo com caixas e barris.
+  <!-- LOCALIZAÇÃO CENTRAL & HORÁRIOS: RUA 13 DE MAIO, 816 -->
+  <section id="contato" class="py-16 sm:py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+    <div class="bg-white rounded-2xl border border-editorial p-8 sm:p-12 shadow-sm">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Atendimento Central</span>
+          <h2 class="font-fraunces font-bold text-3xl sm:text-4xl text-ink">
+            Distribuidora no Centro de Paraíso
+          </h2>
+          <p class="text-sm text-[#4A453E] leading-relaxed">
+            Ponto comercial tradicional e de fácil acesso para carregamento de caixas e barris no centro de Paraíso do Tocantins.
           </p>
 
-          <div class="space-y-4 text-sm">
+          <div class="space-y-4 pt-2 text-sm text-ink">
             <div class="flex items-start gap-3">
-              <i data-lucide="map-pin" class="w-5 h-5 text-amber-400 mt-0.5 shrink-0"></i>
+              <i data-lucide="map-pin" class="w-5 h-5 text-terracotta mt-0.5 shrink-0"></i>
               <div>
-                <span class="font-bold text-white block">Endereço:</span>
-                <span class="text-slate-300">Rua 13 de Maio, nº 816 — Centro</span>
-                <span class="text-slate-500 block text-xs">Paraíso do Tocantins - TO • CEP 77600-000</span>
+                <strong class="block font-bold">Endereço Oficial:</strong>
+                <span class="text-muted">Rua 13 de Maio, nº 816 — Centro</span>
+                <span class="text-muted block text-xs">Paraíso do Tocantins - TO • CEP 77600-000</span>
               </div>
             </div>
 
             <div class="flex items-start gap-3">
-              <i data-lucide="clock" class="w-5 h-5 text-yellow-400 mt-0.5 shrink-0"></i>
+              <i data-lucide="clock" class="w-5 h-5 text-forest mt-0.5 shrink-0"></i>
               <div>
-                <span class="font-bold text-white block">Horário de Funcionamento:</span>
-                <span class="text-slate-400 block">• Segunda a Quarta: 10:00 às 22:00h</span>
-                <span class="text-slate-400 block">• Quinta a Sábado: 09:00 às 00:00h</span>
-                <span class="text-slate-400 block">• Domingo: 09:00 às 19:00h</span>
+                <strong class="block font-bold">Horário de Funcionamento:</strong>
+                <span class="text-muted block">• Segunda a Quarta: 10:00 às 22:00h</span>
+                <span class="text-muted block">• Quinta a Sábado: 09:00 às 00:00h</span>
+                <span class="text-muted block">• Domingo: 09:00 às 19:00h</span>
               </div>
             </div>
 
             <div class="flex items-start gap-3">
-              <i data-lucide="phone" class="w-5 h-5 text-emerald-400 mt-0.5 shrink-0"></i>
+              <i data-lucide="phone" class="w-5 h-5 text-terracotta mt-0.5 shrink-0"></i>
               <div>
-                <span class="font-bold text-white block">WhatsApp de Cotações:</span>
-                <a href="https://api.whatsapp.com/send?phone=5563974006380" target="_blank" class="text-amber-400 hover:underline font-semibold">(63) 97400-6380</a>
+                <strong class="block font-bold">WhatsApp Direto:</strong>
+                <a href="https://api.whatsapp.com/send?phone=5563974006380" target="_blank" class="text-terracotta font-bold hover:underline text-base">(63) 97400-6380</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Google Maps Embed / Rota -->
-        <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 p-2 shadow-2xl">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.362145892019!2d-48.88350122523315!3d-10.177023009641198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b6647bc521d99%3A0x6b1076f2d5e21971!2sR.%20Treze%20de%20Maio%2C%20816%20-%20Centro%2C%20Para%C3%ADso%20do%20Tocantins%20-%20TO%2C%2077600-000!5e0!3m2!1spt-BR!2sbr!4v1727537000000!5m2!1spt-BR!2sbr" 
-            width="100%" 
-            height="320" 
-            style="border:0; border-radius: 12px;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-          <div class="text-center pt-2">
-            <a href="https://maps.google.com/?q=Rua+Treze+de+Maio+816+Centro+Paraiso+do+Tocantins" target="_blank" class="text-xs text-amber-400 hover:underline inline-flex items-center gap-1 font-medium">
-              Abrir rota no Google Maps <i data-lucide="external-link" class="w-3 h-3"></i>
-            </a>
+        <div class="lg:col-span-6">
+          <div class="rounded-xl overflow-hidden border border-editorial p-2 bg-[#FAF7F2]">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.362145892019!2d-48.88350122523315!3d-10.177023009641198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b6647bc521d99%3A0x6b1076f2d5e21971!2sR.%20Treze%20de%20Maio%2C%20816%20-%20Centro%2C%20Para%C3%ADso%20do%20Tocantins%20-%20TO%2C%2077600-000!5e0!3m2!1spt-BR!2sbr!4v1727537000000!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="330" 
+              style="border:0; border-radius: 8px;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+            <div class="text-center pt-2">
+              <a href="https://maps.google.com/?q=Rua+Treze+de+Maio+816+Centro+Paraiso+do+Tocantins" target="_blank" class="text-xs text-forest font-bold hover:underline inline-flex items-center gap-1">
+                Abrir Rota no Google Maps <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="border-t border-white/5 py-10 px-4 bg-[#0b1120] text-slate-500 text-xs">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+  <!-- EDITORIAL FOOTER -->
+  <footer class="border-t border-editorial py-12 px-4 sm:px-6 bg-[#FAF7F2] text-muted text-xs">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      
       <div class="flex items-center gap-3">
-        <img src="assets/logo.jpg" alt="Ideal Bebidas" class="w-7 h-7 rounded-full object-cover">
-        <span>© 2026 Ideal Bebidas • Atacado & Varejo • Centro, Paraíso do Tocantins - TO</span>
+        <img src="assets/logo.jpg" alt="Logo" class="w-8 h-8 rounded-full object-cover">
+        <div>
+          <span class="font-fraunces font-bold text-ink block">Ideal Bebidas • Atacado & Varejo</span>
+          <span>Rua 13 de Maio, 816 — Centro, Paraíso do Tocantins - TO</span>
+        </div>
       </div>
-      <div class="flex items-center gap-4">
-        <a href="proposta.html" class="text-amber-400 hover:text-amber-300 font-medium">Demonstração Exclusiva DLuz Digital • Marketing Digital em Paraíso</a>
+
+      <div class="text-center sm:text-right">
+        <span class="block">Desenvolvido com primor por</span>
+        <a href="proposta.html" class="text-terracotta font-bold hover:underline">DLuz Digital • Empresa de Marketing Digital em Paraíso do Tocantins</a>
       </div>
+
     </div>
   </footer>
 
-  <!-- Floating Mobile WhatsApp CTA -->
-  <div class="fixed bottom-5 right-5 z-50">
-    <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Ideal%20Bebidas%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%21" target="_blank" class="flex items-center gap-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-full shadow-2xl shadow-amber-500/50 hover:scale-105 transition-all text-sm border border-amber-300/40">
-      <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
-      <span class="hidden sm:inline">WhatsApp Cotações</span>
-      <span class="sm:hidden">WhatsApp</span>
+  <!-- FLOATING CTA (WARM EDITORIAL) -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <a href="https://api.whatsapp.com/send?phone=5563974006380&text=Ol%C3%A1%2C%20vi%20o%20site%20da%20Ideal%20Bebidas%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%21" target="_blank" class="flex items-center gap-2.5 bg-terracotta hover:bg-[#a64224] text-white font-bold px-6 py-3.5 rounded-full shadow-lg transition-transform hover:scale-105 text-sm border border-white/20">
+      <i data-lucide="message-circle" class="w-4 h-4 fill-current"></i>
+      <span>Cotação no WhatsApp</span>
     </a>
   </div>
 
   <script>
     lucide.createIcons();
 
-    const slider = document.getElementById('guests-slider');
-    const guestsVal = document.getElementById('guests-val');
-    const eventType = document.getElementById('event-type');
-    const beerFormat = document.getElementById('beer-format');
+    const slider = document.getElementById('editorial-slider');
+    const guestsLabel = document.getElementById('editorial-guests-num');
+    const eventType = document.getElementById('editorial-event-type');
+    const beerPref = document.getElementById('editorial-beer-pref');
 
-    function calculateDrinks() {
+    const outBeer = document.getElementById('out-beer');
+    const outSoda = document.getElementById('out-soda');
+    const outIce = document.getElementById('out-ice');
+
+    function calculateEditorialDrinks() {
       const guests = parseInt(slider.value);
-      guestsVal.innerText = `${guests} pessoas`;
+      guestsLabel.innerText = `${guests} pessoas`;
 
-      // Multipliers based on event type
-      let beerFactor = 1.5; // liters of beer or chopp per person
-      if (eventType.value === 'churrasco') beerFactor = 2.0;
-      if (eventType.value === 'casamento') beerFactor = 1.2;
+      let factor = 1.6;
+      if (eventType.value === 'churrasco') factor = 2.0;
+      if (eventType.value === 'casamento') factor = 1.2;
 
-      const totalLiters = Math.round(guests * beerFactor);
-      const sodaBottles = Math.ceil(guests / 5);
+      const totalLiters = Math.round(guests * factor);
+      const sodas = Math.ceil(guests / 5);
       const iceBags = Math.ceil(guests / 10);
 
-      const beerContainer = document.getElementById('calc-beer');
-      if (beerFormat.value === 'chopp') {
-        const barrels = totalLiters >= 50 ? `${Math.ceil(totalLiters / 50)}x Barril 50L (${totalLiters}L)` : `1x Barril 30L/50L (${totalLiters}L)`;
-        beerContainer.innerText = barrels;
-      } else if (beerFormat.value === 'latas') {
-        const boxes = Math.ceil((totalLiters * 1000) / (350 * 12));
-        beerContainer.innerText = `${boxes} Caixas Fechadas (${boxes * 12} latas)`;
+      if (beerPref.value === 'chopp') {
+        const barrels = Math.ceil(totalLiters / 50);
+        outBeer.innerText = `${barrels}x Barril 50L (${barrels * 50}L)`;
+      } else if (beerPref.value === 'latas') {
+        const cases = Math.ceil((totalLiters * 1000) / (350 * 12));
+        outBeer.innerText = `${cases} Caixas Fechadas (${cases * 12} un)`;
       } else {
-        const barrels = totalLiters >= 50 ? `1x Barril 50L + ` : ``;
-        const remBoxes = Math.max(3, Math.ceil(guests / 6));
-        beerContainer.innerText = `${barrels}${remBoxes} Cx. Latão`;
+        const choppL = Math.max(50, Math.floor(totalLiters * 0.7 / 50) * 50);
+        const remCases = Math.ceil(((totalLiters - choppL) * 1000) / (473 * 12));
+        outBeer.innerText = `1x Barril ${choppL}L + ${Math.max(2, remCases)} Cx. Latão`;
       }
 
-      document.getElementById('calc-soda').innerText = `${sodaBottles} Garrafas 2L + Águas`;
-      document.getElementById('calc-ice').innerText = `${iceBags} Sacos Gelo 5kg`;
+      outSoda.innerText = `${sodas} Garrafas 2L + Águas`;
+      outIce.innerText = `${iceBags} Sacos de 5kg`;
     }
 
-    slider.addEventListener('input', calculateDrinks);
-    eventType.addEventListener('change', calculateDrinks);
-    beerFormat.addEventListener('change', calculateDrinks);
-    calculateDrinks();
+    slider.addEventListener('input', calculateEditorialDrinks);
+    eventType.addEventListener('change', calculateEditorialDrinks);
+    beerPref.addEventListener('change', calculateEditorialDrinks);
+    calculateEditorialDrinks();
 
-    function enviarCalculadoraWhatsApp() {
-      const guests = slider.value;
-      const tipo = eventType.options[eventType.selectedIndex].text;
-      const formato = beerFormat.options[beerFormat.selectedIndex].text;
-      const cerveja = document.getElementById('calc-beer').innerText;
-      const refri = document.getElementById('calc-soda').innerText;
-      const gelo = document.getElementById('calc-ice').innerText;
+    function enviarCalculadoraEditorialWhatsApp() {
+      const g = slider.value;
+      const t = eventType.options[eventType.selectedIndex].text;
+      const b = outBeer.innerText;
+      const s = outSoda.innerText;
+      const i = outIce.innerText;
 
-      const msg = `Olá, fiz uma simulação no site da Ideal Bebidas para meu evento:\n👥 *Convidados:* ${guests} pessoas\n🎉 *Tipo de Evento:* ${tipo}\n🍻 *Previsão de Chopp/Cerveja:* ${cerveja}\n🥤 *Refrigerantes/Águas:* ${refri}\n🧊 *Gelo:* ${gelo}\n\nGostaria de um orçamento detalhado com entrega no local!`;
+      const msg = `Olá Ideal Bebidas! Fiz uma simulação para meu evento no site:\n\n👥 *Convidados:* ${g} pessoas\n🎉 *Formato:* ${t}\n🍻 *Previsão Chopp/Cerveja:* ${b}\n🥤 *Refrigerantes & Águas:* ${s}\n🧊 *Gelo:* ${i}\n\nGostaria de receber uma cotação com entrega no local!`;
       const url = `https://api.whatsapp.com/send?phone=5563974006380&text=${encodeURIComponent(msg)}`;
       window.open(url, '_blank');
     }
